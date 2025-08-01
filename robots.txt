@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chrstphdm.github.io/sitemap.xml
