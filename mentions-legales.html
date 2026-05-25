@@ -30,7 +30,7 @@
       <p>In accordance with French law n°2004-575 of 21 June 2004 (LCEN), the following information is provided:</p>
       <ul>
         <li><strong>Site editor:</strong> Christophe Demay</li>
-        <li><strong>Contact:</strong> christophe.demay+bioinfo@gmail.com</li>
+        <li><strong>Contact:</strong> <span id="ml-contact"></span></li>
         <li><strong>Publication director:</strong> Christophe Demay</li>
       </ul>
 
@@ -58,7 +58,7 @@
       <p>This site uses Google Analytics to measure audience statistics. Analytics cookies are only set if you have given explicit consent via the cookie banner (powered by Cookiebot). You may withdraw your consent at any time by clearing your browser cookies.</p>
 
       <h3>Your rights (GDPR)</h3>
-      <p>Under the General Data Protection Regulation (EU 2016/679), you have the right to access, rectify, and request deletion of any personal data concerning you. To exercise these rights, contact: <strong>christophe.demay+bioinfo@gmail.com</strong>.</p>
+      <p>Under the General Data Protection Regulation (EU 2016/679), you have the right to access, rectify, and request deletion of any personal data concerning you. To exercise these rights, contact: <strong><span id="ml-gdpr"></span></strong>.</p>
 
       <h3>Data Protection Authority</h3>
       <p>If you believe your rights have not been respected, you may lodge a complaint with the French data protection authority: <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">CNIL</a>.</p>
@@ -73,5 +73,13 @@
   <footer>
     <p>&copy; 2026 Christophe Demay &nbsp;·&nbsp; <a href="index.html">Back to site</a></p>
   </footer>
+  <script>
+    const u = "christophe.demay+bioinfo";
+    const d = "gmail.com";
+    const addr = u + "@" + d;
+    const link = '<a href="mailto:' + addr + '">' + addr + '</a>';
+    document.getElementById("ml-contact").innerHTML = link;
+    document.getElementById("ml-gdpr").innerHTML = link;
+  </script>
 </body>
 </html>
