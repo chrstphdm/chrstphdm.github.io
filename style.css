@@ -177,6 +177,14 @@ body {
   font-style: italic;
 }
 
+.header-promise {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 400;
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
 .how-steps {
   max-width: 600px;
   margin: 1.5rem auto;
@@ -283,7 +291,8 @@ body {
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea,
+.form-group select {
   padding: 0.6rem 0.75rem;
   border: 1px solid #dde6ed;
   border-radius: 4px;
@@ -294,7 +303,8 @@ body {
 }
 
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.form-group select:focus {
   outline: none;
   border-color: #004466;
   background: #fff;

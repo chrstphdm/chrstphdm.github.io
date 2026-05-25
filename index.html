@@ -77,6 +77,7 @@
       <div class="header-text">
         <h1>Christophe Demay</h1>
         <p>Senior Bioinformatics Consultant · Pipeline & Infrastructure Advisor</p>
+        <p class="header-promise">I help genomics teams build, rescue and scale reproducible bioinformatics workflows.</p>
         <p>Nextflow Whisperer · AWK Tamer since 2001</p>
         <span class="badge-available">Available for missions</span>
       </div>
@@ -85,9 +86,9 @@
 
   <nav>
     <ul>
-      <li><a href="#about">About</a></li>
       <li><a href="#consulting">Consulting</a></li>
       <li><a href="#examples">Examples</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Experience</a></li>
       <li><a href="#publications">Publications</a></li>
@@ -97,28 +98,6 @@
   </nav>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I help research teams and clinical labs who have the biology expertise and the data, but need someone to design, build, or modernise their bioinformatics infrastructure. With nearly 20 years at the intersection of biology, computing, and systems architecture, I turn raw sequencing data into analytical workflows that hold up in production.
-      </p>
-      <p>
-        On one side, code: Bash, AWK, Perl, Python, Groovy, Java, C. On another, infrastructure: HPC, containers, cloud. In the middle, 20 years of genomics. I design Nextflow pipelines on Google Cloud, Azure, and OVHcloud, and help teams figure out what compute setup actually makes sense for their data and their budget.
-      </p>
-      <p>
-        I can work with nf-core and the Seqera Platform when they fit the context, but I also build lightweight custom Nextflow pipelines from the DSL up, when teams need more control, lower cost, or closer alignment with their biology.
-      </p>
-      <p>
-        My bioinformatics experience covers HLA typing, variant calling, structural variant analysis, annotation workflows (VEP, SnpEff), quality control (FastQC, MultiQC, Mosdepth, CoverM), expression analysis (Cufflinks, featureCounts), metagenomics, and proteomics. I've used DRAGEN extensively, and work daily with BWA, minimap2, HISAT2, samtools, bedtools, and GATK.
-      </p>
-      <p>
-        Whether it's tuning a SLURM scheduler, writing a Nextflow pipeline, or crafting an AWK one-liner, I go straight to the root of the problem. KIS — Keep It Simple — is not a platitude, it's how I actually work.
-      </p>
-      <p>
-        My background in Perl, C, and C++ is a genuine asset: I've been asked more than once to modernise legacy pipelines built in these languages, and knowing them deeply — their idioms, their performance characteristics, their failure modes — means I can migrate them faithfully to Nextflow without losing the intent of the original logic. Most bioinformaticians today have never had to debug a segfault or optimise a tight Perl loop. I have, and that matters when the job is to rewrite something that works and make it work better.
-      </p>
-    </section>
-
     <section id="consulting">
       <h2>Consulting Services</h2>
       <p><strong>Does this sound familiar?</strong></p>
@@ -141,8 +120,8 @@
           <p class="card-deliverables">Deliverables: infrastructure design, cost analysis, deployment scripts, scaling strategy.</p>
         </div>
         <div class="card">
-          <h3>Genomics Analysis</h3>
-          <p>HLA typing, WGS, RNA-seq: from raw data to clinical-grade interpretation.</p>
+          <h3>Reproducible Genomics Workflows</h3>
+          <p>HLA typing, WGS, RNA-seq: end-to-end pipelines from raw data to traceable, auditable results.</p>
           <p class="card-deliverables">Deliverables: analysis results, quality reports, reproducible workflow.</p>
         </div>
         <div class="card">
@@ -211,18 +190,43 @@
           <h3>Population-scale WGS and HLA analysis</h3>
           <p><strong>Context:</strong> large whole-genome sequencing project, 40,000+ samples.</p>
           <p><strong>Work:</strong> designed a meta-algorithm for HLA typing, built the data preparation pipeline for a deep learning imputation model, co-led DRAGEN integration.</p>
+          <p><strong>Outcome:</strong> reproducible analysis strategy for a population-scale cohort, with direct applications in transplantation and precision medicine.</p>
         </div>
         <div class="card">
           <h3>Clinical NGS pipeline infrastructure</h3>
           <p><strong>Context:</strong> hospital diagnostics lab, 12+ clinical care areas over 8 years.</p>
           <p><strong>Work:</strong> built and maintained sequencing pipelines for somatic, germline and microbiology analysis. Integrated Nextflow, deployed HPC with SLURM/OAR.</p>
+          <p><strong>Outcome:</strong> stable, auditable clinical workflows used daily by biologists for diagnostic validation.</p>
         </div>
         <div class="card">
           <h3>Long-read metagenomics on cloud HPC</h3>
           <p><strong>Context:</strong> biotech startup, first large-scale metagenomic analysis.</p>
           <p><strong>Work:</strong> structured the pipeline architecture, set up reproducible workflows with Nextflow and Apptainer on OVHcloud, designed for scalability.</p>
+          <p><strong>Outcome:</strong> production-ready infrastructure that scales with data volume without rearchitecting.</p>
         </div>
       </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I help research teams and clinical labs who have the biology expertise and the data, but need someone to design, build, or modernise their bioinformatics infrastructure. With nearly 20 years at the intersection of biology, computing, and systems architecture, I turn raw sequencing data into analytical workflows that hold up in production.
+      </p>
+      <p>
+        On one side, code: Bash, AWK, Perl, Python, Groovy, Java, C. On another, infrastructure: HPC, containers, cloud. In the middle, 20 years of genomics. I design Nextflow pipelines on Google Cloud, Azure, and OVHcloud, and help teams figure out what compute setup actually makes sense for their data and their budget.
+      </p>
+      <p>
+        I can work with nf-core and the Seqera Platform when they fit the context, but I also build lightweight custom Nextflow pipelines from the DSL up, when teams need more control, lower cost, or closer alignment with their biology.
+      </p>
+      <p>
+        My bioinformatics experience covers HLA typing, variant calling, structural variant analysis, annotation workflows (VEP, SnpEff), quality control (FastQC, MultiQC, Mosdepth, CoverM), expression analysis (Cufflinks, featureCounts), metagenomics, and proteomics. I've used DRAGEN extensively, and work daily with BWA, minimap2, HISAT2, samtools, bedtools, and GATK.
+      </p>
+      <p>
+        Whether it's tuning a SLURM scheduler, writing a Nextflow pipeline, or crafting an AWK one-liner, I go straight to the root of the problem. KIS — Keep It Simple — is not a platitude, it's how I actually work.
+      </p>
+      <p>
+        My background in Perl, C, and C++ is a genuine asset: I've been asked more than once to modernise legacy pipelines built in these languages, and knowing them deeply — their idioms, their performance characteristics, their failure modes — means I can migrate them faithfully to Nextflow without losing the intent of the original logic. Most bioinformaticians today have never had to debug a segfault or optimise a tight Perl loop. I have, and that matters when the job is to rewrite something that works and make it work better.
+      </p>
     </section>
 
     <section id="collaborations">
@@ -314,6 +318,19 @@
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="need">What do you need help with?</label>
+          <select id="need" name="need">
+            <option value="" selected>Select an option (optional)</option>
+            <option value="Pipeline audit">Pipeline audit</option>
+            <option value="Nextflow development">Nextflow development</option>
+            <option value="Cloud/HPC architecture">Cloud/HPC architecture</option>
+            <option value="Legacy migration">Legacy migration</option>
+            <option value="Training">Training</option>
+            <option value="Fractional advisor">Fractional advisor</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="message">Message</label>
