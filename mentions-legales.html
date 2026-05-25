@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Notice &amp; Privacy Policy · Christophe Demay</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favico.ico" />
+  <meta name="robots" content="noindex" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="header-text">
+        <h1>Christophe Demay</h1>
+        <p>Legal Notice &amp; Privacy Policy</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">← Back to site</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Legal Notice (Mentions légales)</h2>
+      <p>In accordance with French law n°2004-575 of 21 June 2004 (LCEN), the following information is provided:</p>
+      <ul>
+        <li><strong>Site editor:</strong> Christophe Demay</li>
+        <li><strong>Contact:</strong> <span id="ml-contact"></span></li>
+        <li><strong>Publication director:</strong> Christophe Demay</li>
+      </ul>
+
+      <h3>Hosting</h3>
+      <ul>
+        <li><strong>Provider:</strong> GitHub, Inc.</li>
+        <li><strong>Address:</strong> 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States</li>
+        <li><strong>Website:</strong> <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">pages.github.com</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Privacy Policy</h2>
+
+      <h3>Data collected</h3>
+      <p>This site collects the following personal data only when you submit the contact form:</p>
+      <ul>
+        <li>Name</li>
+        <li>Email address</li>
+        <li>Message content</li>
+      </ul>
+      <p>This data is transmitted via <a href="https://web3forms.com" target="_blank" rel="noopener noreferrer">Web3Forms</a> (a form processing service) and forwarded by email to the site editor. It is used solely to respond to your enquiry and is not stored, sold, or used for any other purpose.</p>
+
+      <h3>Cookies and analytics</h3>
+      <p>This site uses Google Analytics to measure audience statistics. Analytics cookies are only set if you have given explicit consent via the cookie banner (powered by Cookiebot). You may withdraw your consent at any time by clearing your browser cookies.</p>
+
+      <h3>Your rights (GDPR)</h3>
+      <p>Under the General Data Protection Regulation (EU 2016/679), you have the right to access, rectify, and request deletion of any personal data concerning you. To exercise these rights, contact: <strong><span id="ml-gdpr"></span></strong>.</p>
+
+      <h3>Data Protection Authority</h3>
+      <p>If you believe your rights have not been respected, you may lodge a complaint with the French data protection authority: <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">CNIL</a>.</p>
+    </section>
+
+    <section>
+      <h2>Intellectual Property</h2>
+      <p>Text content on this site is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a>. Organisation logos displayed in the Collaborations section remain the exclusive property of their respective organisations and are shown for informational purposes only.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Christophe Demay &nbsp;·&nbsp; <a href="index.html">Back to site</a></p>
+  </footer>
+  <script>
+    const u = "christophe.demay+bioinfo";
+    const d = "gmail.com";
+    const addr = u + "@" + d;
+    const link = '<a href="mailto:' + addr + '">' + addr + '</a>';
+    document.getElementById("ml-contact").innerHTML = link;
+    document.getElementById("ml-gdpr").innerHTML = link;
+  </script>
+</body>
+</html>
