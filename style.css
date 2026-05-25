@@ -227,14 +227,14 @@ body {
   margin-right: auto;
 }
 
-/* Project timeline styling */
-#projects ul {
+/* Project & publications timeline styling */
+#projects ul, #publications ul {
   list-style: none;
   padding-left: 0;
   position: relative;
 }
 
-#projects ul::before {
+#projects ul::before, #publications ul::before {
   content: '';
   position: absolute;
   left: 10px;
@@ -244,13 +244,13 @@ body {
   background: #ccc;
 }
 
-#projects li {
+#projects li, #publications li {
   position: relative;
   padding-left: 30px;
   margin-bottom: 1.5rem;
 }
 
-#projects li::before {
+#projects li::before, #publications li::before {
   content: '';
   position: absolute;
   left: 4px;
