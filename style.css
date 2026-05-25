@@ -134,6 +134,38 @@ body {
     }
   }
 
+/* Service cards */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.card {
+  border: 1px solid #dde6ed;
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: #f8fbfd;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 68, 102, 0.12);
+}
+
+.card h3 {
+  color: #004466;
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
   /* Logo grid for collaborations */
   .logo-grid {
     display: flex;
