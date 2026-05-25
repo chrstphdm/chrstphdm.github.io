@@ -217,6 +217,31 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
+.btn-cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.65rem 1.75rem;
+  background: #004466;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn-cta:hover {
+  background: #00334d;
+}
+
+.publications-earlier {
+  font-size: 0.8rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 1.5rem 0 0.25rem 30px;
+}
+
 .contact-note {
   text-align: center;
   margin-top: 1.25rem;
