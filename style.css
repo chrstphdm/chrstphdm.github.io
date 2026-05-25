@@ -177,6 +177,23 @@ body {
   font-style: italic;
 }
 
+.how-steps {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding-left: 1.5rem;
+  line-height: 2;
+  font-size: 1rem;
+  color: #333;
+}
+
+.how-steps li {
+  margin-bottom: 0.5rem;
+}
+
+.how-steps strong {
+  color: #004466;
+}
+
   /* Logo grid for collaborations */
   .logo-grid {
     display: flex;
