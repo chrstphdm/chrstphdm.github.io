@@ -93,6 +93,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#consulting">Consulting</a></li>
+      <li><a href="#resources">Resources</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -179,6 +180,17 @@
       </p>
     </section>
 
+    <section id="resources">
+      <h2>Open Resources</h2>
+      <p>Tools and guides I've built for the bioinformatics community:</p>
+      <div class="service-cards">
+        <div class="card">
+          <h3><a href="https://chrstphdm.github.io/ilovetesting/" target="_blank" rel="noopener noreferrer">I Love Testing</a></h3>
+          <p>A hands-on resource for adopting testing practices in bioinformatics workflows — built to help teams write more reliable pipelines.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="projects">
       <h2>Professional Experience</h2>
       <ul>
@@ -204,18 +216,23 @@
           const user = "christophe.demay+bioinfo";
           const domain = "gmail.com";
           const link = `mailto:${user}@${domain}`;
-          const icon = `<a href="${link}" title="Email" target="_blank">
+          const icon = `<a href="${link}" title="Email" target="_blank" rel="noopener noreferrer">
             <img src="icons/gmail.svg" alt="Gmail" />
           </a>`;
           document.getElementById("email-icon").innerHTML = icon;
         </script>
-        <a href="https://github.com/chrstphdm" title="GitHub" target="_blank">
+        <a href="https://github.com/chrstphdm" title="GitHub" target="_blank" rel="noopener noreferrer">
           <img src="icons/github.svg" alt="GitHub" />
         </a>
-        <a href="https://www.linkedin.com/in/christophedemay" title="LinkedIn" target="_blank">
+        <a href="https://www.linkedin.com/in/christophedemay" title="LinkedIn" target="_blank" rel="noopener noreferrer">
           <img src="icons/linkedin.svg" alt="LinkedIn" />
         </a>
       </div>
+      <p class="contact-note">
+        I work <strong>remote-first</strong>, with occasional on-site visits when needed.
+        I'm open to project-based missions and longer-term engagements, with research institutions,
+        clinical labs, and genomics organisations.
+      </p>
     </section>
   </main>
 
