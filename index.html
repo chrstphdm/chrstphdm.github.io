@@ -255,8 +255,16 @@
     </section>
   </main>
 
+  <button id="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
   <footer>
     <p>&copy; 2026 Christophe Demay - Text content licensed under CC BY-NC 4.0</p>
   </footer>
+  <script>
+    const btn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > 300);
+    });
+  </script>
 </body>
 </html>
