@@ -170,6 +170,13 @@ body {
   color: #555;
 }
 
+.card-deliverables {
+  margin-top: 0.5rem !important;
+  font-size: 0.8rem !important;
+  color: #888 !important;
+  font-style: italic;
+}
+
   /* Logo grid for collaborations */
   .logo-grid {
     display: flex;
