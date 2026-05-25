@@ -277,6 +277,13 @@ body {
   min-height: 120px;
 }
 
+.form-privacy {
+  font-size: 0.8rem;
+  color: #999;
+  text-align: center;
+  margin: 0;
+}
+
 .publications-earlier {
   font-size: 0.8rem;
   color: #999;
