@@ -221,27 +221,32 @@
     <section id="contact">
       <h2>Contact Me</h2>
       <p style="text-align: center;">
-        Interested in a collaboration or consulting support?<br />
-        You can reach out directly by email or connect via GitHub or LinkedIn:
+        Describe your project in 2–3 lines — I'll get back to you within 48 hours.
       </p>
-      <div class="contact-icons">
-        <span id="email-icon"></span>
-        <script>
-          const user = "christophe.demay+bioinfo";
-          const domain = "gmail.com";
-          const link = `mailto:${user}@${domain}`;
-          const icon = `<a href="${link}" title="Email" target="_blank" rel="noopener noreferrer">
-            <img src="icons/gmail.svg" alt="Gmail" />
-          </a>`;
-          document.getElementById("email-icon").innerHTML = icon;
-        </script>
-        <a href="https://github.com/chrstphdm" title="GitHub" target="_blank" rel="noopener noreferrer">
-          <img src="icons/github.svg" alt="GitHub" />
-        </a>
-        <a href="https://www.linkedin.com/in/christophedemay" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <img src="icons/linkedin.svg" alt="LinkedIn" />
-        </a>
-      </div>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+        <input type="hidden" name="subject" value="New message from chrstphdm.github.io" />
+        <input type="checkbox" name="botcheck" style="display:none" />
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="What are you working on? What do you need help with?"></textarea>
+        </div>
+        <button type="submit" class="btn-cta">Send message →</button>
+      </form>
+      <p style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
+        Or connect via
+        <a href="https://www.linkedin.com/in/christophedemay" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        or
+        <a href="https://github.com/chrstphdm" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
       <p class="contact-note">
         I work <strong>remote-first</strong>, with occasional on-site visits when needed.
         I'm open to project-based missions and longer-term engagements, with research institutions,
