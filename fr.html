@@ -21,6 +21,57 @@
   <meta property="og:description" content="Consultant freelance en bioinformatique : pipelines Nextflow, infrastructure HPC/cloud, audit et accompagnement." />
   <meta property="og:image" content="https://chrstphdm.github.io/images/avatar.png" />
   <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@chrstphdm" />
+  <meta name="twitter:creator" content="@chrstphdm" />
+  <meta name="twitter:title" content="Christophe Demay | Consultant Bioinformatique" />
+  <meta name="twitter:description" content="Consultant freelance en bioinformatique : pipelines Nextflow, infrastructure HPC/cloud, audit et accompagnement." />
+  <meta name="twitter:image" content="https://chrstphdm.github.io/images/avatar.png" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Christophe Demay",
+    "jobTitle": "Consultant Senior en Bioinformatique",
+    "url": "https://chrstphdm.github.io/fr.html",
+    "image": "https://chrstphdm.github.io/images/avatar.png",
+    "knowsLanguage": ["fr", "en"],
+    "knowsAbout": ["Bioinformatique", "Nextflow", "Typage HLA", "Génomique", "Cloud HPC"],
+    "sameAs": [
+      "https://www.linkedin.com/in/christophedemay",
+      "https://github.com/chrstphdm",
+      "https://x.com/chrstphdm"
+    ],
+    "description": "Expert en pipelines Nextflow, typage HLA, architecture cloud et automatisation de workflows. Près de 20 ans d'expérience en bioinformatique, génomique et diagnostique clinique."
+  }
+  </script>
+  <script data-cookieconsent="ignore">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("consent", "default", {
+      ad_personalization: "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      analytics_storage: "denied",
+      functionality_storage: "denied",
+      personalization_storage: "denied",
+      security_storage: "granted",
+      wait_for_update: 500,    }
+    );
+    gtag("set", "ads_data_redaction", true);
+    gtag("set", "url_passthrough", false);
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VQ4DVCX87" type="text/plain" data-cookieconsent="statistics"></script>
+  <script type="text/plain" data-cookieconsent="statistics">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7VQ4DVCX87');
+  </script>
 </head>
 <body>
   <header>
@@ -30,7 +81,7 @@
         <h1>Christophe Demay</h1>
         <p>Consultant Senior en Bioinformatique</p>
         <p class="header-promise">J'aide les équipes génomique et microbiome à construire, fiabiliser et faire passer à l'échelle leurs workflows bioinformatiques.</p>
-        <p>Nextflow Whisperer · AWK Tamer since 2001</p>
+        <p>Nextflow Whisperer · Je murmure à l'oreille d'AWK depuis 2001</p>
         <span class="badge-available">Disponible pour missions</span>
       </div>
     </div>
@@ -41,6 +92,10 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#exemples">Exemples</a></li>
       <li><a href="#profil">Profil</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#parcours">Parcours</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#ressources">Ressources</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="index.html">English</a></li>
     </ul>
@@ -174,6 +229,78 @@
       <p>
         Mon background en Perl, C et C++ est un atout réel : on m'a demandé plus d'une fois de moderniser des pipelines écrits dans ces langages. Les connaître en profondeur me permet de les migrer vers Nextflow sans perdre l'intention de la logique d'origine.
       </p>
+    </section>
+
+    <section id="collaborations">
+      <h2>Collaborations</h2>
+      <p>Quelques organisations avec lesquelles j'ai travaillé :</p>
+      <div class="logo-grid">
+        <img src="images/LogoIPG_2012.png" alt="Institut Pasteur de la Guadeloupe" loading="lazy" />
+        <img src="images/CRCHU-Logo-LinkedIn-blanc.png" alt="Plateforme de Protéomique du CRCHU de Québec" loading="lazy" />
+        <img src="images/ircl-logo.png" alt="Institut pour la Recherche sur le Cancer de Lille" loading="lazy" />
+        <img src="images/CHU_Lille_Logo.png" alt="CHU de Lille" loading="lazy" />
+        <img src="images/QPHI---WHITE-LOGO_Page_2.png" alt="Qatar Genome Program" loading="lazy" />
+        <img src="images/20240205095912-logo-starfish.png" alt="Starfish Biosciences" loading="lazy" />
+      </div>
+      <p style="font-size: 0.8rem; color: #666;">
+        Les logos sont utilisés à titre informatif et restent la propriété de leurs organisations respectives.
+      </p>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <ul>
+        <li><strong>Pipeline & Workflow :</strong> Nextflow, Snakemake, Apptainer/Singularity, Docker, Conda/Mamba, CI/CD, reproductibilité, principes FAIR</li>
+        <li><strong>Génomique & NGS :</strong> WGS/WES, typage HLA (HLA-HD, T1K, HISAT-genotype), variant calling (GATK, DRAGEN, samtools), annotation (VEP, SnpEff), QC (FastQC, MultiQC, Mosdepth), métagénomique, transcriptomique</li>
+        <li><strong>Infrastructure :</strong> HPC (SLURM, OAR, LSF), cloud (GCP, Azure, OVHcloud), Magic Castle, Terraform, Ansible, parallélisation, stockage</li>
+        <li><strong>Langages :</strong> Bash, AWK, Python, Groovy, Perl, C, C++, R, Rust</li>
+      </ul>
+    </section>
+
+    <section id="parcours">
+      <h2>Parcours professionnel</h2>
+      <ul>
+        <li><strong>2025</strong> — Développeur bioinformatique senior, Starfish Biosciences (France) : référent technique pour un pipeline métagénomique long-read sur OVHcloud HPC. Architecture, workflows reproductibles avec Nextflow et Apptainer, conception pour la montée en charge.</li>
+        <li><strong>2024-2025</strong> — Consultant freelance (France) : accompagnement d'équipes dans la transition de scripts ad hoc vers des pipelines structurés et reproductibles. Conseil en infrastructure de calcul (HPC, cloud) et architecture logicielle.</li>
+        <li><strong>2022-2024</strong> — Bioinformaticien senior, Qatar Genome Program (Qatar) : développement d'un panel de référence HLA spécialisé pour la population arabe à partir de 29 824 individus, une population historiquement sous-représentée dans les bases de référence génomiques mondiales. Conception d'un méta-algorithme intégrant HISAT-genotype, HLA-HD et T1K. Construction du pipeline de préparation de données pour un modèle d'imputation HLA par deep learning. Co-pilotage de l'intégration DRAGEN dans le workflow QGP, avec réanalyse d'un dataset WGS de 40 000 échantillons.</li>
+        <li><strong>2013-2021</strong> — Ingénieur bioinformatique, CHU de Lille (France) : conception et maintenance de pipelines de séquençage diagnostique sur 12+ spécialités cliniques pendant 8 ans : analyse somatique et constitutionnelle, microbiologie clinique, immunogénétique. Intégration Nextflow, déploiement HPC SLURM/OAR. Conformité clinique et reproductibilité non négociables.</li>
+        <li><strong>2011-2013</strong> — Ingénieur bioinformatique, IRC-Lille (France) : analyse de données miRNA pour la recherche pronostique sur les lymphomes. Développement de workflows d'analyse sur cluster.</li>
+        <li><strong>2009-2010</strong> — Professionnel de recherche, CRCHUL (Canada) : outils d'intégration de données protéomiques et LIMS Ruby-on-Rails relié à des plateformes d'analyse en spectrométrie de masse.</li>
+        <li><strong>2006-2008</strong> — Ingénieur logiciel bioinformatique, Institut Pasteur de Guadeloupe : développement de bases de données de génotypage et d'outils de data mining pour la recherche sur la tuberculose.</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications &amp; Communications</h2>
+      <ul>
+        <li><strong>2024</strong> — Communication orale · Symposium SHLARC-SIP on Immunoinformatics, Nantes, France : <em>Navigating HLA Typing Challenges in a Population-Wide Whole-Genome Sequencing Project</em>.</li>
+        <li><strong>2023</strong> — Poster · ASHG Annual Meeting : <em>Developing a shareable HLA imputation reference panel for the Arab population</em>. Demay C. et al.</li>
+      </ul>
+      <p class="publications-earlier">Travaux antérieurs</p>
+      <ul>
+        <li><strong>2008</strong> — Article · <em>Infection, Genetics and Evolution</em> : SITVITWEB — A publicly available international multimarker database for studying <em>Mycobacterium tuberculosis</em> genetic diversity and molecular epidemiology. Demay C. et al.</li>
+        <li><strong>2008</strong> — Congrès · 29th Annual Congress of the European Society of Microbacteriology (ESM), Plovdiv, Bulgarie : <em>Tuberculosis — a global emergency: an overview of methods and tools to control, understand and track the TB epidemic worldwide</em>. Demay C., Zozio T., Millet J., Rastogi N.</li>
+        <li><strong>2008</strong> — Congrès · Research on Infectious Diseases: A Global Challenge, Réseau Institut Pasteur, Paris : <em>Tuberculosis in the French Departments of the Americas: Epidemiology, drug resistance and geographical tracking of the major genotypic lineages of Mycobacterium tuberculosis</em>. Millet J. et al. (incl. Demay C.)</li>
+      </ul>
+    </section>
+
+    <section id="ressources">
+      <h2>Ressources ouvertes</h2>
+      <p>Outils et guides que j'ai construits pour la communauté bioinformatique :</p>
+      <div class="service-cards">
+        <div class="card">
+          <h3><a href="https://chrstphdm.github.io/awk-bioinfo-cookbook/" target="_blank" rel="noopener noreferrer">AWK Bioinformatics Cookbook</a></h3>
+          <p>Recettes AWK et gawk pratiques pour la génomique, organisées par problème : FASTQ, FASTA, VCF, BED/GFF, jointures, et plus.</p>
+        </div>
+        <div class="card">
+          <h3><a href="https://chrstphdm.github.io/magic-castle-ovhcloud/" target="_blank" rel="noopener noreferrer">Magic Castle sur OVHcloud</a></h3>
+          <p>Guide communautaire pour déployer un cluster HPC SLURM sur OVHcloud avec Magic Castle, basé sur une expérience terrain.</p>
+        </div>
+        <div class="card">
+          <h3><a href="https://chrstphdm.github.io/ilovetesting/" target="_blank" rel="noopener noreferrer">I Love Testing</a></h3>
+          <p>Ressource pratique pour les équipes qui veulent écrire des pipelines bioinformatiques plus fiables.</p>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
